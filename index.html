@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JUST INFO</title>
+  <link rel="stylesheet" href="js/jquery.mobile-1.4.5.css" />
+  <link rel="stylesheet" href="css/just-info-theme.css" />
+  <link rel="stylesheet" href="css/estilos.css" />
+  <script src="js/jquery-1.12.3.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- home -->
+
+  <div data-role="page" id="home">
+    <div id="action-bar" data-role="header" data-position="fixed" class="action-bar">
+
+
+      <h1 id="logo" class="logo">J U S T - I N F O</h1>
+
+      <a href="#logueo0" data-rel="popup" data-position-to="window" data-transition="flip" data-icon="usuario"
+        data-iconpos="notext" class="ui-btn-right btn-login">login</a>
+    </div>
+
+    <div id="logueo0" data-role="popup" class="popup-entero-login">
+      <div data-role="header" class="popup-fuente">
+        <h1>INICIA SESIÓN</h1>
+        <a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext"
+          class="ui-btn-right btn-close">Cerrar Popup</a>
+      </div>
+      <div class="div-logueo">
+        <form id="formulario-login0" method="get">
+          <label class="titulo-log-in">Email:</label>
+          <input class="input-login" type="text" id="email-ingresado" value="" name="email" />
+          <label class="titulo-log-in" for="password">Contraseña:</label>
+          <input class="input-login" type="password" name="password" id="contrasenia-ingresada" value=""
+            autocomplete="off" name="clave" />
+
+          <a id="btn-ingresar" class="btn-inicio-sesion btn-inicio-sesion0" href="#">Ingresar</a>
+        </form>
+      </div>
+    </div>
+
+    <div role="main" class="ui-content noticias">
+
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+      <div data-role="navbar" data-iconpos="top">
+        <ul>
+          <li>
+            <a href="#home" data-transition="flow" class="
+                  ui-btn
+                  ui-state-persist
+                  ui-shadow
+                  ui-corner-all
+                  ui-icon-casita
+                  ui-btn-icon-top
+                "></a>
+          </li>
+
+
+
+          <li>
+            <a href="#info" data-transition="flow" class="
+                  ui-btn ui-shadow ui-corner-all ui-icon-informacion ui-btn-icon-top
+                "></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOTICIA PH-->
+
+  <div class="noticiaAobtener" data-role="page" id="noticia-">
+    <div id="action-bar-noticia" data-role="header" data-position="fixed" class="action-bar">
+
+
+      <h1 id="logo-noticia" class="logo">J U S T - I N F O</h1>
+      <a href="#logueo1" data-rel="popup" data-position-to="window" data-transition="flip" data-icon="usuario"
+        data-iconpos="notext" class="ui-btn-right btn-login">login</a>
+    </div>
+
+    <div id="logueo1" data-role="popup" class="popup-entero-login">
+      <div data-role="header" class="popup-fuente">
+        <h1>INICIA SESIÓN</h1>
+        <a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext"
+          class="ui-btn-right">Cerrar Popup</a>
+      </div>
+      <div class="div-logueo">
+        <form id="formulario-login1" method="get">
+          <label class="titulo-log-in">Email:</label>
+          <input class="input-login" type="text" id="email-ingresado" value="" name="email" />
+          <label class="titulo-log-in" for="password">Contraseña:</label>
+          <input class="input-login" type="password" name="password" id="contrasenia-ingresada" value=""
+            autocomplete="off" name="clave" />
+
+          <a id="btn-ingresar" class="btn-inicio-sesion btn-inicio-sesion1" href="#">Ingresar</a>
+        </form>
+      </div>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <div>
+        <h1 class="titulo-noticia">
+
+        </h1>
+
+        <div data-role="tabs" class="detalles-nota">
+          <p class="by">por <span class="autor"></span></p>
+          <p class="fecha-nota"></p>
+          <a id="prueba" href="#cambiar-fuentes" class="
+                ui-btn
+                ui-corner-all
+                ui-icon-fuentes
+                ui-btn-icon-notext
+                ui-btn-icon-right
+                btn-font
+              " data-rel="popup" data-position-to="window" data-transition="flip"></a>
+        </div>
+
+        <div id="cambiar-fuentes" data-role="popup">
+          <div data-role="header" class="popup-fuente">
+            <h1>CAMBIAR FUENTES</h1>
+            <a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext"
+              class="ui-btn-right">Cerrar Popup</a>
+          </div>
+          <div id="div-fira-sans" class="fonts cada-font seleccionado-font">
+            <h3 class="titulo-cada-font">Fira Sans</h3>
+            <p class="texto-cada-font">Jovencillo emponzoñado de whisky.</p>
+          </div>
+          <div id="div-hind" class="fonts cada-font1">
+            <h3 class="titulo-cada-font">Hind</h3>
+            <p class="texto-cada-font1">Jovencillo emponzoñado de whisky.</p>
+          </div>
+          <div id="div-roboto-slab" class="fonts cada-font2">
+            <h3 class="titulo-cada-font">Roboto Slab</h3>
+            <p class="texto-cada-font2">Jovencillo emponzoñado de whisky.</p>
+          </div>
+        </div>
+
+        <div id="intro-desa">
+          <img src="imagenes/mc.jpg" alt="mcdonal" class="img-fluida-detalle-noticia" />
+          <h3 class="introduccion cambiame-intro">
+          </h3>
+          <p class="desarrollo cambiame-desarrollo">
+          </p>
+        </div>
+      </div>
+
+      <div data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+          <ul>
+            <li>
+              <a href="#home" data-transition="flow" data-direction="reverse" class="
+                    ui-btn ui-shadow ui-corner-all ui-icon-casita ui-btn-icon-top
+                  "></a>
+            </li>
+
+
+            <li>
+              <a href="#info" data-transition="flow" class="
+                    ui-btn ui-shadow ui-corner-all ui-icon-informacion ui-btn-icon-top
+                  "></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- VISTA INFO-->
+
+  <div data-role="page" id="info">
+    <div id="action-bar-info" data-role="header" data-position="fixed" class="action-bar">
+
+
+      <h1 class="logo">J U S T - I N F O</h1>
+      <a href="#logueo3" data-rel="popup" data-position-to="window" data-transition="flip" data-icon="usuario"
+        data-iconpos="notext" class="ui-btn-right btn-login">login</a>
+    </div>
+
+    <div id="logueo3" data-role="popup" class="popup-entero-login">
+      <div data-role="header" class="popup-fuente">
+        <h1>INICIA SESIÓN</h1>
+        <a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext"
+          class="ui-btn-right">Cerrar Popup</a>
+      </div>
+      <div class="div-logueo">
+        <form id="formulario-login2" method="get">
+          <label class="titulo-log-in">Email:</label>
+          <input class="input-login" type="text" id="email-ingresado" value="" name="email" />
+          <label class="titulo-log-in" for="password">Contraseña:</label>
+          <input class="input-login" type="password" name="password" id="contrasenia-ingresada" value=""
+            autocomplete="off" name="clave" />
+
+          <a id="btn-ingresar" class="btn-inicio-sesion btn-inicio-sesion2" href="#">Ingresar</a>
+        </form>
+      </div>
+    </div>
+
+    <div role="main" class="ui-content div-info">
+      <h1 class="sobre-nosotros">Sobre nosotros</h1>
+      <p class="fira-sans">
+        Just Info nace en 1998, siendo el primer diario gamer de la historia.
+        Contamos con un equipo especializado en cada rama del gaming y
+        nuestros lectores nos lo agradecen día a día con sus comentarios.
+      </p>
+      <h1 class="desarrolladores">Desarrolladores</h1>
+    </div>
+
+    <div class="ui-grid-a">
+      <div id="foto1" class="ui-block-a">
+        <img class="foto1gonza" src="imagenes/Gonza.jpg" alt="Cara de Gonza" />
+        <h3 id="nombres">Gonzalo Nahuel Rodriguez</h3>
+        <h4 id="carrera">Diseño Multimedial</h4>
+
+        <h5 id="materia">Materia</h5>
+        <h6 id="materia-program">
+          Desarrollo de Aplicaciones Multiplataforma
+        </h6>
+        <h5 id="materia">Comisión</h5>
+        <h6 id="materia-program">A</h6>
+        <h5 id="materia">Turno</h5>
+        <h6 id="materia-program">Tarde</h6>
+        <h5 id="materia">Año</h5>
+        <h6 id="materia-program">2021</h6>
+      </div>
+
+      <div class="ui-block-b">
+        <img class="img-juampi" src="imagenes/juampi.jpg" alt="Cara de Juampi" />
+        <h3 id="nombres">Juan Pablo Soro Lovece</h3>
+        <h4 id="carrera">Diseño Multimedial</h4>
+
+        <h5 id="materia">Materia</h5>
+        <h6 id="materia-program">
+          Desarrollo de Aplicaciones Multiplataforma
+        </h6>
+        <h5 id="materia">Comisión</h5>
+        <h6 id="materia-program">A</h6>
+        <h5 id="materia">Turno</h5>
+        <h6 id="materia-program">Tarde</h6>
+        <h5 id="materia">Año</h5>
+        <h6 id="materia-program">2021</h6>
+      </div>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+      <div data-role="navbar" data-iconpos="top">
+        <ul>
+          <li>
+            <a href="#home" data-transition="flow" data-direction="reverse" class="
+                  ui-btn ui-shadow ui-corner-all ui-icon-casita ui-btn-icon-top
+                "></a>
+          </li>
+
+
+          <li>
+            <a href="#info" data-transition="flow" class="
+                  ui-btn
+                  ui-state-persist
+                  ui-shadow
+                  ui-corner-all
+                  ui-icon-informacion
+                  ui-btn-icon-top
+                "></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- LINK CON EL JS -->
+
+  <script src="js/scripting.js"></script>
+
+
+
+  <!-- SCRIPT  -->
+
+  <script>
+    // OBTIENE USUARIO FORMULARIO INICIO DE SESION 
+
+    $(".btn-inicio-sesion0").on("click", function (data) {
+      //sorojuanpablo@gmail.com
+      //juampitito
+
+      $.getJSON(
+        "logueo/login.php",
+        $("#formulario-login0").serialize(),
+        function (data) {
+          var datosUsuario = new Array();
+
+          datosUsuario.push("id: " + data.id_usuario);
+          datosUsuario.push("email: " + data.email);
+          datosUsuario.push("nombre: " + data.primer_nombre);
+          datosUsuario.push("apellido: " + data.primer_apellido);
+          datosUsuario.push("nivel: " + data.id_nivel);
+
+          var datosUsuario_json = JSON.stringify(datosUsuario);
+
+          localStorage.setItem("usuario", datosUsuario_json);
+
+          //logica para agregar el nombre arriba
+
+          $('.btn-login').attr('style', 'display: none !important');
+
+
+          var nombreUsuarioLogueado = data.primer_nombre;
+
+
+
+          var headerJustInfoHome = $('#action-bar');
+
+
+          headerJustInfoHome.append(
+            '<div class="div-header"><h4 class="saludo-nombre"><span class="hola">Hola,</span> ' +
+            nombreUsuarioLogueado + ' ' +
+            ' <span class="vertical-bar">|</span></h4><a href="#"  class="cerrar-sesion">Cerrar Sesión</a></div>'
+            );
+
+          var headerJustInfo = $('#action-bar-noticia');
+
+
+          headerJustInfo.append(
+            '<div class="div-header"><h4 class="saludo-nombre"><span class="hola">Hola,</span> ' +
+            nombreUsuarioLogueado + ' ' +
+            ' <span class="vertical-bar">|</span></h4><a href="#"  class="cerrar-sesion">Cerrar Sesión</a></div>'
+            );
+
+          var headerJustInfoInfo = $('#action-bar-info');
+
+
+          headerJustInfoInfo.append(
+            '<div class="div-header"><h4 class="saludo-nombre"><span class="hola">Hola,</span> ' +
+            nombreUsuarioLogueado + ' ' +
+            ' <span class="vertical-bar">|</span></h4><a href="#"  class="cerrar-sesion">Cerrar Sesión</a></div>'
+            );
+
+          $(".btn-close").click();
+
+
+          location.reload();
+          
+        }
+      );
+    });
+
+
+    // INICIO DE SESION VISTA 2
+
+
+    $(".btn-inicio-sesion1").on("click", function (data) {
+      //sorojuanpablo@gmail.com
+      //juampitito
+
+      $.getJSON(
+        "logueo/login.php",
+        $("#formulario-login1").serialize(),
+        function (data) {
+          var datosUsuario = new Array();
+
+          datosUsuario.push("id: "+data.id_usuario);
+          datosUsuario.push("email: " + data.email);
+          datosUsuario.push("nombre: " + data.primer_nombre);
+          datosUsuario.push("apellido: " + data.primer_apellido);
+          datosUsuario.push("nivel: " + data.id_nivel);
+
+          var datosUsuario_json = JSON.stringify(datosUsuario);
+
+          localStorage.setItem("usuario", datosUsuario_json);
+
+          //logica para agregar el nombre arriba
+
+          $('.btn-login').attr('style', 'display: none !important');
+
+          var nombreUsuarioLogueado = data.primer_nombre;
+
+          var headerJustInfoHome = $('#action-bar');
+
+
+          headerJustInfoHome.append(
+            '<div class="div-header"><h4 class="saludo-nombre"><span class="hola">Hola,</span> ' +
+            nombreUsuarioLogueado + ' ' +
+            ' <span class="vertical-bar">|</span></h4><a href="#"  class="cerrar-sesion">Cerrar Sesión</a></div>'
+            );
+
+          var headerJustInfo = $('#action-bar-noticia');
+
+
+          headerJustInfo.append(
+            '<div class="div-header"><h4 class="saludo-nombre"><span class="hola">Hola,</span> ' +
+            nombreUsuarioLogueado + ' ' +
+            ' <span class="vertical-bar">|</span></h4><a href="#"  class="cerrar-sesion">Cerrar Sesión</a></div>'
+            );
+
+          var headerJustInfoInfo = $('#action-bar-info');
+
+
+          headerJustInfoInfo.append(
+            '<div class="div-header"><h4 class="saludo-nombre"><span class="hola">Hola,</span> ' +
+            nombreUsuarioLogueado + ' ' +
+            ' <span class="vertical-bar">|</span></h4><a href="#"  class="cerrar-sesion">Cerrar Sesión</a></div>'
+            );
+
+          $(".btn-close").click();
+
+          location.reload();
+
+
+        }
+      );
+    });
+
+    // INICIO DE SESION VISTA 3
+
+    $(".btn-inicio-sesion2").on("click", function (data) {
+      //sorojuanpablo@gmail.com
+      //juampitito
+
+      $.getJSON(
+        "logueo/login.php",
+        $("#formulario-login2").serialize(),
+        function (data) {
+          var datosUsuario = new Array();
+
+          datosUsuario.push("id: " + data.id_usuario);
+          datosUsuario.push("email: " + data.email);
+          datosUsuario.push("nombre: " + data.primer_nombre);
+          datosUsuario.push("apellido: " + data.primer_apellido);
+          datosUsuario.push("nivel: " + data.id_nivel);
+
+          var datosUsuario_json = JSON.stringify(datosUsuario);
+
+          localStorage.setItem("usuario", datosUsuario_json);
+
+          //logica para agregar el nombre arriba
+
+          $('.btn-login').attr('style', 'display: none !important');
+
+          var nombreUsuarioLogueado = data.primer_nombre;
+
+
+          var headerJustInfoHome = $('#action-bar');
+
+
+          headerJustInfoHome.append(
+            '<div class="div-header"><h4 class="saludo-nombre"><span class="hola">Hola,</span> ' +
+            nombreUsuarioLogueado + ' ' +
+            ' <span class="vertical-bar">|</span></h4><a href="#"  class="cerrar-sesion">Cerrar Sesión</a></div>'
+            );
+
+          var headerJustInfo = $('#action-bar-noticia');
+
+
+
+
+          headerJustInfo.append(
+            '<div class="div-header"><h4 class="saludo-nombre"><span class="hola">Hola,</span> ' +
+            nombreUsuarioLogueado + ' ' +
+            ' <span class="vertical-bar">|</span></h4><a href="#"  class="cerrar-sesion">Cerrar Sesión</a></div>'
+            );
+
+
+          var headerJustInfoInfo = $('#action-bar-info');
+
+
+          headerJustInfoInfo.append(
+            '<div class="div-header"><h4 class="saludo-nombre"><span class="hola">Hola,</span> ' +
+            nombreUsuarioLogueado + ' ' +
+            ' <span class="vertical-bar">|</span></h4><a href="#"  class="cerrar-sesion">Cerrar Sesión</a></div>'
+            );
+
+
+
+          $(".btn-close").click();
+
+          location.reload();
+
+
+        }
+      );
+    });
+
+
+    //
+    //
+    // CADA NOTICIA - JUANSIN AYUDA CON COMENTARIOS
+
+
+
+    $(document).on("click", ".obtenerNoticia", function (event) {
+      function obtenerNoticia(data) {
+
+
+        $(".noticiaAobtener").attr("id", "noticia-" + data.id_trabajo + "");
+
+        // -- VARIABLES POR SI TIENEN QUE TRAER LOS COMENTARIOS EN OTRO ARRAY -- //
+
+        var titulo = data.titulo;
+
+        var apynomautor =
+          data.primer_nombre +
+          " " +
+          data.segundo_nombre +
+          " " +
+          data.primer_apellido;
+
+        var fechaPublicacion = data.fecha_trabajo;
+
+        var introduccionNoticia = data.introduccion;
+
+        var desarrolloNoticia = data.desarrollo;
+
+        //ESTO TENDRIA QUE IR EN UN FOREACH SI HACEN ESA LOGICAJAJAJAJ
+        var fechaComentario = data.fecha;
+
+        var comentario = data.comentario;
+
+        // -- VARIABLES POR SI TIENEN QUE TRAER LOS COMENTARIOS EN OTRO ARRAY -- //
+
+        $(".titulo-noticia").text(titulo);
+
+        $(".autor").text(apynomautor);
+
+        $(".img-fluida-detalle-noticia").attr("src", 'imagenes/'+data.nombre_imagen);
+
+        var mes = data.mes;
+
+        var fecha = data.dia + ' de ' + mes + ', ' + data.anio;
+
+        $(".fecha-nota").text(
+          'Publicado ' + fecha);
+
+
+
+
+
+        $(".introduccion").text(introduccionNoticia);
+
+        $(".desarrollo").text(desarrolloNoticia);
+
+
+
+        //$.mobile.initializePage();
+
+        $.mobile.changePage("#noticia-" + data.id_trabajo + "");
+
+        $(".ui-icon-loading").removeClass("ui-icon-loading");
+
+        $(".ui-loader").removeClass("ui-loader");
+
+      }
+      var id = $(this).attr("href");
+
+      id = id.replace("#noticia-", "");
+
+
+      // OBTENER NOTICIAS DEL LOCAL STORAGE SI FALLA LA CONEXION - JUANSIN AYUDA CON COMENTARIOS
+
+      $.getJSON("logueo/noticia_buscar.php?id=" + id + "", obtenerNoticia)
+        .done(function () {
+
+        })
+        .fail(function () {
+
+          var noticias_obtenerjson = localStorage.getItem("noticias");
+
+
+          if (noticias_obtenerjson != null && noticias_obtenerjson != undefined && noticias_obtenerjson != "") {
+            var itemsRecuperadosArray = JSON.parse(noticias_obtenerjson);
+
+            for (var i in itemsRecuperadosArray) {
+              if (id == itemsRecuperadosArray[i].id_trabajo) {
+                $(".noticiaAobtener").attr("id", "noticia-" + itemsRecuperadosArray[i].id_trabajo + "");
+
+                // -- VARIABLES POR SI TIENEN QUE TRAER LOS COMENTARIOS EN OTRO ARRAY -- //
+
+                var titulo = itemsRecuperadosArray[i].titulo;
+
+                var apynomautor =
+                  itemsRecuperadosArray[i].primer_nombre +
+                  " " +
+                  itemsRecuperadosArray[i].segundo_nombre +
+                  " " +
+                  itemsRecuperadosArray[i].primer_apellido;
+
+                var fechaPublicacion = itemsRecuperadosArray[i].fecha_trabajo;
+
+                var introduccionNoticia = itemsRecuperadosArray[i].introduccion;
+
+                var desarrolloNoticia = itemsRecuperadosArray[i].desarrollo;
+
+                //ESTO TENDRIA QUE IR EN UN FOREACH SI HACEN ESA LOGICAJAJAJAJ
+                var fechaComentario = itemsRecuperadosArray[i].fecha;
+
+                var comentario = itemsRecuperadosArray[i].comentario;
+
+                // -- VARIABLES POR SI TIENEN QUE TRAER LOS COMENTARIOS EN OTRO ARRAY -- //
+
+                $(".titulo-noticia").text(titulo);
+
+                $(".autor").text(apynomautor);
+
+                $(".img-fluida-detalle-noticia").attr("src", 'imagenes/'+itemsRecuperadosArray[i].nombre_imagen);
+
+                //console.log(itemsRecuperadosArray[i]);
+
+                var mes = itemsRecuperadosArray[i].mes;
+
+                var fecha = itemsRecuperadosArray[i].dia + ' de ' + mes + ', ' + itemsRecuperadosArray[i].anio;
+
+                $(".fecha-nota").text(
+                  'Publicado ' + fecha);
+
+
+
+
+
+                $(".introduccion").text(introduccionNoticia);
+
+                $(".desarrollo").text(desarrolloNoticia);
+
+                //$.mobile.initializePage();
+
+                $.mobile.changePage("#noticia-" + itemsRecuperadosArray[i].id_trabajo);
+
+                $(".ui-icon-loading").removeClass("ui-icon-loading");
+
+                $(".ui-loader").removeClass("ui-loader");
+
+              }
+            }
+          }
+
+
+
+        });
+
+    });
+
+
+
+    // RECUPERA USUARIO LOCAL STORAGE - REVISA SI HAY UN USUARIO GUARDADO
+
+
+    $(document).on("ready", function () {
+
+      var json_usuario = localStorage.getItem("usuario");
+
+      if (json_usuario != null && json_usuario != undefined && json_usuario != "") {
+
+        var usuario_recuperado = JSON.parse(json_usuario);
+
+        console.log(usuario_recuperado);
+
+        $('.btn-login').attr('style', 'display: none !important');
+
+        var nombreUsuarioLogueado = usuario_recuperado[2].replace('nombre: ', '');
+
+
+
+        var headerJustInfo = $('#action-bar');
+
+
+        headerJustInfo.append('<div class="div-header"><h4 class="saludo-nombre"><span class="hola">Hola,</span> ' +
+          nombreUsuarioLogueado + ' ' +
+          ' <span class="vertical-bar">|</span></h4><a href="#"  class="cerrar-sesion">Cerrar Sesión</a></div>');
+
+        var headerJustInfoHome = $('#action-bar-noticia');
+
+
+        headerJustInfoHome.append(
+          '<div class="div-header"><h4 class="saludo-nombre"><span class="hola">Hola,</span> ' +
+          nombreUsuarioLogueado + ' ' +
+          ' <span class="vertical-bar">|</span></h4><a href="#"  class="cerrar-sesion">Cerrar Sesión</a></div>');
+
+        var headerJustInfoInfo = $('#action-bar-info');
+
+
+        headerJustInfoInfo.append(
+          '<div class="div-header"><h4 class="saludo-nombre"><span class="hola">Hola,</span> ' +
+          nombreUsuarioLogueado + ' ' +
+          ' <span class="vertical-bar">|</span></h4><a href="#"  class="cerrar-sesion">Cerrar Sesión</a></div>');
+
+
+
+      }
+
+      //
+
+      // RECUPERA NOTICIAS LOCAL STORAGE - REVISA SI HAY NOTICIAS GUARDADAS
+
+      $.getJSON("logueo/noticias.php", recorrerNoticias)
+        .done(function () {
+
+
+        })
+        .fail(function () {
+
+          var noticias_obtenerjson = localStorage.getItem("noticias");
+
+          if (noticias_obtenerjson != null && noticias_obtenerjson != undefined && noticias_obtenerjson != "") {
+
+            var itemsRecuperadosArray = JSON.parse(noticias_obtenerjson);
+
+            for (var i in itemsRecuperadosArray) {
+              var div = $(
+                '<div data-role="content" id="cada-noticia" class="cada-noticia container"></div>'
+              );
+              var divHeader = $(
+                '<div data-role="header" class="footer-noticia ui-header ui-bar-inherit" role="banner"></div>'
+              );
+
+              div
+                .append(
+                  '<a href="#noticia-' +
+                  itemsRecuperadosArray[i].id_trabajo +
+                  '"class="obtenerNoticia ui-link"><div class="z-index"></div><form action="#noticia"></a>'
+                )
+                .append(
+                  '<a href="#noticia-' +
+                  itemsRecuperadosArray[i].id_trabajo +
+                  '" class="obtenerNoticia ui-link "><img src="imagenes/'+itemsRecuperadosArray[i].nombre_imagen+'" alt="mc" class="img-fluid-noticias"/></a>'
+
+                  
+                )
+                .append('<p class="texto-abajo capitalizacion">' + itemsRecuperadosArray[i].titulo + "</p>")
+                .append("</div>");
+
+              divHeader
+                .append(
+                  '<p class="fecha">' +
+                  itemsRecuperadosArray[i].fecha_trabajo +
+                  '<span class="rubro">' +
+                  itemsRecuperadosArray[i].rubro +
+                  "</p>"
+                );
+
+              var obtenerUsuarioLogueado_json = localStorage.getItem('usuario');
+
+              if (obtenerUsuarioLogueado_json != null && obtenerUsuarioLogueado_json != undefined &&
+                obtenerUsuarioLogueado_json != "") {
+
+                  var obtenerLikes_json = localStorage.getItem('likes');
+
+                  if(obtenerLikes_json != null && obtenerLikes_json != undefined && obtenerLikes_json != ""){
+
+                    var arrayLikes = JSON.parse(obtenerLikes_json);
+
+
+
+                    if (arrayLikes != null && arrayLikes.includes(
+                        'idNoticia: ' + itemsRecuperadosArray[i].id_trabajo + '')) {
+                      divHeader.append(
+                        '<a href="#" id="noticia-like-' + itemsRecuperadosArray[i].id_trabajo +
+                        '" class="ui-icon-like-lleno posicion ui-btn-left ui-btn ui-icon-tag ui-btn-icon-right ui-corner-all" data-role="button" role="button"></a>'
+                      )
+                    } else {
+                      divHeader.append(
+                        '<a href="#" id="noticia-like-' + itemsRecuperadosArray[i].id_trabajo +
+                        '" class="ui-icon-like-vacio posicion ui-btn-left ui-btn ui-icon-tag ui-btn-icon-right ui-corner-all" data-role="button" role="button"></a>'
+                        );
+                    }
+                  } else {
+                    divHeader.append(
+                      '<a href="#" id="noticia-like-' + itemsRecuperadosArray[i].id_trabajo +
+                      '" class="ui-icon-like-vacio posicion ui-btn-left ui-btn ui-icon-tag ui-btn-icon-right ui-corner-all" data-role="button" role="button"></a>'
+                      );
+                  }
+
+                  }
+
+
+
+
+
+              var divContenedor = $("<div></div>");
+
+              divContenedor.append(div);
+              divContenedor.append(divHeader);
+
+              var divfirmas = $(
+                '<div id="contenedor-confirmar" data-position="fixed"></div>'
+              );
+
+              divfirmas.append(
+                '<a id="boton-confirmar" href="#" class="ui-btn ui-icon-check ui-btn-icon-notext ui-corner-all btn-confirmar">Notext</a>'
+              );
+              var test1 = "";
+              var test2 = "";
+              test1 = $(".noticias").append(divContenedor);
+              test2 = $(".noticias").append(divfirmas);
+            }
+
+
+          } else {
+
+
+            var noticias = $(".noticias");
+            noticias.append(
+
+              '<h2 class="error">No hay noticias para cargar :( </h2>'
+
+            )
+
+          }
+
+
+        });
+
+
+      //
+      
+      // CARGA HOME DE NOTICIAS - LIKES
+
+      function recorrerNoticias(data) {
+
+        var noticias_json = JSON.stringify(data);
+        localStorage.setItem("noticias", noticias_json);
+        for (var i in data) {
+          var div = $(
+            '<div data-role="content" id="cada-noticia" class="cada-noticia container"></div>'
+          );
+          var divHeader = $(
+            '<div data-role="header" class="footer-noticia ui-header ui-bar-inherit" role="banner"></div>'
+          );
+
+          div
+            .append(
+              '<a href="#noticia-' +
+              data[i].id_trabajo +
+              '"class="obtenerNoticia ui-link"><div class="z-index"></div><form action="#noticia"></a>'
+            )
+            .append(
+              '<a href="#noticia-' +
+              data[i].id_trabajo +
+              '" class="obtenerNoticia ui-link "><img src="imagenes/'+data[i].nombre_imagen+'" alt="mc" class="img-fluid-noticias"/></a>'
+            )
+            .append('<p class="texto-abajo capitalizacion">' + data[i].titulo + "</p>")
+            .append("</div>");
+
+          divHeader
+            .append(
+              '<p class="fecha">' +
+              data[i].fecha_trabajo +
+              '<span class="rubro">' +
+              data[i].rubro +
+              "</p>"
+            );
+          var obtenerUsuarioLogueado_json = localStorage.getItem('usuario');
+
+          if (obtenerUsuarioLogueado_json != null && obtenerUsuarioLogueado_json != undefined &&
+            obtenerUsuarioLogueado_json != "") {
+
+            var obtenerLikes_json = localStorage.getItem('likes');
+
+
+
+            var obtenerUsuarioLogueado_array = JSON.parse(obtenerUsuarioLogueado_json);
+
+            var id = obtenerUsuarioLogueado_array[0].replace('id: ', '');
+            if(obtenerLikes_json != null && obtenerLikes_json != undefined && obtenerLikes_json != ""){
+
+              var arrayLikes = JSON.parse(obtenerLikes_json);
+              if(arrayLikes != null && arrayLikes != undefined && arrayLikes.length > 0 && arrayLikes != ""){
+
+
+                
+                for(var j in arrayLikes){
+                  console.log();
+                  var uId = obtenerUsuarioLogueado_array[0].replace('id: ', '');
+
+                  //Este es el usuario actual.
+                  if(arrayLikes[j].idUsuario == uId){
+
+                    //Recorro el array de noticias del objeto
+
+                    for(var x in arrayLikes[j].idNoticia){
+                      if(arrayLikes[j].idNoticia[x] == data[i].id_trabajo){
+                        divHeader.append(
+                        '<a href="#" id="noticia-like-' + data[i].id_trabajo +
+                        '" class="ui-icon-like-lleno posicion ui-btn-left ui-btn ui-icon-tag ui-btn-icon-right ui-corner-all" data-role="button" role="button"></a>'
+                      );
+                      } else {
+                        divHeader.append(
+                  '<a href="#" id="noticia-like-' + data[i].id_trabajo +
+                  '" class="ui-icon-like-vacio posicion ui-btn-left ui-btn ui-icon-tag ui-btn-icon-right ui-corner-all" data-role="button" role="button"></a>'
+                  );
+                      }
+                      
+                    }
+                    
+
+                    //Dentro del usuario logueado se cargan las noticias.
+                  } else {
+                    divHeader.append(
+                  '<a href="#" id="noticia-like-' + data[i].id_trabajo +
+                  '" class="ui-icon-like-vacio posicion ui-btn-left ui-btn ui-icon-tag ui-btn-icon-right ui-corner-all" data-role="button" role="button"></a>'
+                  );
+
+                  }
+  
+                } 
+              } else {
+                divHeader.append(
+                  '<a href="#" id="noticia-like-' + data[i].id_trabajo +
+                  '" class="ui-icon-like-vacio posicion ui-btn-left ui-btn ui-icon-tag ui-btn-icon-right ui-corner-all" data-role="button" role="button"></a>'
+                  );
+              }
+              
+            } else {
+              divHeader.append(
+                  '<a href="#" id="noticia-like-' + data[i].id_trabajo +
+                  '" class="ui-icon-like-vacio posicion ui-btn-left ui-btn ui-icon-tag ui-btn-icon-right ui-corner-all" data-role="button" role="button"></a>'
+                  );
+            }
+
+          }
+
+          var divContenedor = $("<div></div>");
+
+          divContenedor.append(div);
+          divContenedor.append(divHeader);
+
+          var divfirmas = $(
+            '<div id="contenedor-confirmar" data-position="fixed"></div>'
+          );
+
+          divfirmas.append(
+            '<a id="boton-confirmar" href="#" class="ui-btn ui-icon-check ui-btn-icon-notext ui-corner-all btn-confirmar">Notext</a>'
+          );
+          var test1 = "";
+          var test2 = "";
+          test1 = $(".noticias").append(divContenedor);
+          test2 = $(".noticias").append(divfirmas);
+        }
+      }
+
+
+
+
+
+
+    });
+  </script>
+</body>
+
+</html>

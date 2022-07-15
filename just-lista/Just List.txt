@@ -1,0 +1,19 @@
+Just List es una app de tareas y listas que te ayudará con tu organización diaria.
+Utiliza Just List para crear listas de compras, listas de tareas o planear tu dia. Esto ayudara a incrementar tu productividad.
+Esta app te facilitará mantenerte organizado.
+
+Características de Just List:
+
+- Agregar items
+- Destacar items mas importantes
+- Tildar items
+- Destildar items
+- Borrar items
+- Hacer una limpieza total de items 
+
+
+Just List con Propósitos:
+- Organizador de pagos
+- Lista de compras
+- Organizador de tareas
+- Y más

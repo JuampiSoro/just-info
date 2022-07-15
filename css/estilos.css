@@ -1,0 +1,674 @@
+@font-face {
+    font-family: 'Pridi';
+    src: url("../fonts/Pridi/Pridi-SemiBold.ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cantarell';
+    src: url("../fonts/Cantarell/Cantarell-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
+
+    font-family: 'Caladea';
+    src: url("../fonts/Caladea/Caladea-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+
+    font-family: 'Catamaran';
+    src: url("../fonts/Catamaran/static/Catamaran-Bold.ttf");
+    font-weight: 700;
+    font-style: bold;
+    src: url("../fonts/Catamaran/static/Catamaran-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+
+    font-family: 'Chivo';
+    src: url("../fonts/Chivo/Chivo-Bold.ttf");
+    font-weight: 700;
+    font-style: bold;
+    src: url("../fonts/Chivo/Chivo-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+
+    font-family: 'Fira Sans';
+    src: url("../fonts/Fira_Sans/FiraSans-Medium.ttf");
+    font-weight: 500;
+    font-style: bold;
+    src: url("../fonts/Fira_Sans/FiraSans-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+
+    font-family: 'Hind';
+    src: url("../fonts/Hind/Hind-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/Hind/Hind-SemiBold.ttf");
+    font-weight: 600;
+    font-style: bold;
+
+}
+
+@font-face {
+
+    font-family: 'Roboto Slab';
+    src: url("../fonts/Roboto_Slab/static/RobotoSlab-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/Roboto_Slab/static/RobotoSlab-Bold.ttf");
+    font-weight: 700;
+    font-style: bold;
+
+}
+
+.ui-icon-like-lleno:after {
+    background-image: url(../icons/like-lleno.png);
+}
+
+.ui-icon-like-vacio:after {
+    background-image: url(../icons/like-vacio.png);
+}
+
+.ui-icon-usuario:after {
+    background-image: url(../icons/usuario.png);
+}
+
+.ui-icon-informacion:after {
+    background-image: url(../icons/informacion.png);
+}
+
+.ui-icon-fuentes:after {
+    background-image: url(../icons/fuentes.png);
+}
+
+.ui-icon-casita:after {
+    background-image: url(../icons/casita.png);
+}
+
+
+
+.logo {
+    font-family: 'Pridi', sans-serif;
+    text-align: left !important;
+    margin-left: 12px !important;
+
+}
+
+div .btn-login {
+    display: block !important;
+    padding: 2px !important;
+}
+
+div .btn-login:after {
+    display: block !important;
+}
+
+
+.ui-state-persist {
+    background-color: #5d0cdf !important;
+}
+
+.ui-btn-left,
+.ui-btn-right {
+    border: transparent;
+}
+
+.ui-btn-left:hover,
+.ui-btn-right:hover {
+    background-color: #5d0cdf !important;
+}
+
+.ui-content h1 {
+    font-family: 'Caladea', serif !important;
+    font-weight: bold;
+    color: black !important;
+}
+
+
+div .fira-sans {
+    font-family: 'Fira Sans', sans-serif !important;
+    font-weight: normal;
+    color: #141414 !important;
+}
+
+.div-info {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+div .sobre-nosotros {
+    margin-top: 5px;
+}
+
+div .desarrolladores {
+    margin-bottom: 0px;
+}
+
+div .img-juampi {
+
+    max-width: 100%;
+
+}
+
+div .foto1gonza {
+
+    max-width: 100%;
+}
+
+h5,
+h6 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h5 {
+    color: #5d0cdf;
+    font-family: 'Fira Sans', sans-serif !important;
+    font-weight: bold;
+
+}
+
+h6 {
+    color: #141414;
+    font-family: 'Fira Sans', sans-serif !important;
+    font-weight: normal;
+}
+
+h3 {
+    margin-top: 0px;
+    font-family: 'Fira Sans', sans-serif !important;
+    font-weight: bold;
+    color: black !important;
+}
+
+h4 {
+    color: black;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-family: 'Fira Sans', sans-serif !important;
+    font-weight: bold;
+
+}
+
+div .cada-noticia {
+    margin-top: 13px;
+    height: 230px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
+div div .cada-font {
+    background-color: #fafafa !important;
+    width: 300px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 8px;
+}
+
+div div .cada-font1 {
+    background-color: #fafafa !important;
+    width: 300px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div div .cada-font2 {
+    background-color: #fafafa !important;
+    width: 300px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div div .seleccionado-font {
+    background-color: #d3c4eb !important;
+}
+
+div div .titulo-cada-font {
+    margin-top: 5%;
+    margin-left: 4%;
+    margin-top: 0px;
+    margin-bottom: 1%;
+    font-family: 'Catamaran', sans-serif !important;
+    font-weight: 700 !important;
+    font-style: bold !important;
+    color: black !important;
+}
+
+div div .texto-cada-font {
+    margin-top: 0px;
+    margin-left: 4%;
+    margin-bottom: 0px;
+    color: #444444;
+    font-family: 'Fira Sans', sans-serif !important;
+    font-weight: bold;
+}
+
+div div .texto-cada-font1 {
+    margin-top: 0px;
+    margin-left: 4%;
+    margin-bottom: 0px;
+    color: #444444;
+    font-family: 'Hind', sans-serif !important;
+    font-weight: bold;
+}
+
+div div .texto-cada-font2 {
+    margin-top: 0px;
+    margin-left: 4%;
+    margin-bottom: 0px;
+    color: #444444;
+    font-family: 'Roboto Slab', serif !important;
+    font-weight: bold;
+}
+
+.noticias {
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 0px;
+}
+
+div .footer-noticia {
+    background-color: #5d0cdf !important;
+    height: 30px;
+    border-color: #5d0cdf !important;
+}
+
+div div div .img-fluid-noticias {
+    width: 100%;
+    height: 100%;
+}
+
+div div .fecha {
+    margin-top: 0px;
+    padding-top: 5px;
+    padding-left: 0px;
+    color: white;
+    font-family: 'Chivo', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 16px;
+
+}
+
+
+div div .rubro {
+    font-family: 'Chivo', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    margin-left: 10px;
+    position: relative !important;
+    top: 1.3px !important;
+}
+
+div div .posicion {
+    background-color: transparent !important;
+    margin-left: 85% !important;
+    margin-top: 3px !important;
+}
+
+
+
+.container-prueba {
+    height: 400px;
+    width: 400px;
+    position: relative;
+
+
+}
+
+div .prueba {
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+div .texto-en-imagen {
+
+    z-index: 100;
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    left: 150px;
+    top: 350px;
+}
+
+.container {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+.texto-abajo {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    padding-right: 16px;
+    margin-bottom: 0px;
+    font-family: 'Cantarell', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+div div div .z-index {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgb(64, 0, 169, 0));
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+    position: absolute;
+}
+
+div .titulo-noticia {
+    margin-top: 0px;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+div .by {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    margin-top: 1px;
+    margin-bottom: 0px;
+}
+
+div .autor {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    color: black;
+}
+
+div .fecha-nota {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #A5A5A5;
+    font-size: 12px;
+    margin-top: 0px;
+}
+
+div .detalles-nota {
+    background-color: transparent !important;
+}
+
+div .btn-font {
+    position: absolute;
+    top: 10%;
+    left: 87%;
+    margin-top: 0px;
+    width: 0px !important;
+}
+
+div .img-fluida-detalle-noticia {
+    margin-top: 5px;
+    width: 100%;
+    height: 200px;
+}
+
+div .introduccion {
+    margin-top: 8px;
+}
+
+div .desarrollo {
+    color: #141414;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: normal;
+}
+
+
+.roboto-slab-intro {
+    font-family: 'Roboto Slab', serif !important;
+    font-weight: bold;
+}
+
+.roboto-slab-desarrollo {
+    font-family: 'Roboto Slab', serif !important;
+    font-weight: normal;
+}
+
+.hind-intro {
+    font-family: 'Hind', sans-serif !important;
+    font-weight: bold;
+}
+
+.hind-desarrollo {
+    font-family: 'Hind', sans-serif !important;
+    font-weight: normal;
+}
+
+.fira-sans-intro {
+    font-family: 'Fira Sans', sans-serif !important;
+    font-weight: bold;
+}
+
+.fira-sans-desarrollo {
+    font-family: 'Fira Sans', sans-serif !important;
+    font-weight: normal;
+}
+
+div div .titulo-log-in {
+    margin-top: 8%;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    color: #4000A9;
+}
+
+div .div-logueo {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 4%;
+    height: 200px;
+
+}
+
+div .popup-entero-login {
+    width: 300px;
+}
+
+div div .input-login {
+    background-color: #f2e7ff !important;
+}
+
+.ui-input-text {
+    margin-bottom: 20px;
+}
+
+div div .btn-inicio-sesion {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 14px;
+    color: #fafafa !important;
+    background-color: #3600A9;
+    padding: 8px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-shadow: none;
+    position: relative;
+    left: 200px;
+}
+
+
+
+
+
+.contenedor-filtro .buscador {
+    margin-top: 10px !important;
+    padding: .4em;
+    line-height: 1.4em;
+    display: block;
+    width: 95%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    min-height: 2.2em;
+    border: 0;
+    background-color: rgb(243, 230, 255);
+    -webkit-appearance: none;
+    -webkit-border-radius: inherit;
+    border-radius: 10px;
+    box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+input:focus {
+    box-shadow: 0 0 6.5pt 0.9pt #8e30e5;
+}
+
+.contenedor-filtro {
+    display: flex;
+    justify-content: center;
+}
+
+div .btn-confirmar {
+    position: absolute;
+    bottom: 9%;
+    right: 25px;
+    height: 45px !important;
+    width: 45px !important;
+    background-color: #4000A9 !important;
+    position: fixed;
+    display: none;
+}
+
+.comentarios .titulo-comentario {
+    margin-top: 50px !important;
+    margin-bottom: 15px;
+    font-family: 'Catamaran', sans-serif !important;
+    font-weight: 700 !important;
+    font-style: bold !important;
+    font-size: 23px;
+}
+
+.comentarios .nombre-comentario {
+    font-family: 'Catamaran', sans-serif !important;
+    font-weight: 700 !important;
+    font-style: bold !important;
+    color: #4000A9 !important;
+}
+
+.comentarios .fecha-comentario {
+    font-size: 12px !important;
+    color: rgb(48, 48, 48) !important;
+    font-family: 'Catamaran', sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+}
+
+
+.comentarios .comentario {
+    font-size: 12px;
+}
+
+.comentarios .container-comentario {
+    margin-bottom: 15px;
+}
+
+.capitalizacion {
+
+    text-transform: uppercase !important;
+
+}
+
+.error {
+    color: #8e30e5;
+    font-family: 'Catamaran', sans-serif !important;
+    font-weight: 700 !important;
+    font-style: bold !important;
+    text-align: center;
+}
+
+
+div .hola {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #e9e9e9;
+    font-size: 16px;
+    margin-top: 0px;
+}
+
+div .saludo-nombre {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    color: #ffffff;
+    font-size: 17px;
+    margin-top: 0px;
+    text-align: right;
+    display: inline-block;
+
+}
+
+div .cerrar-sesion {
+
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #f6d6ff;
+    font-size: 15px;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+div .cerrar-sesion:active {
+
+    color: #f6d6ff !important;
+}
+
+div .cerrar-sesion:visited {
+    color: #f6d6ff !important;
+}
+
+div .cerrar-sesion:focus {
+    color: #f6d6ff !important;
+}
+
+div .vertical-bar {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 400;
+    font-style: oblique;
+    font-size: 20px;
+    position: relative;
+    top: 2px;
+}
+
+.div-header {
+    position: relative;
+    text-align: right;
+    margin-right: 2%;
+    bottom: 33px;
+}
+
+.action-bar {
+    height: 42px;
+    border-color: transparent !important;
+    border: 0px;
+}

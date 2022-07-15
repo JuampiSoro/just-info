@@ -1,0 +1,233 @@
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url(fonts/Lato-Black.ttf),
+        url(fonts/Lato-BlackItalic.ttf,),
+        url(fonts/Lato-Bold.ttf),
+        url(fonts/Lato-BoldItalic.ttf),
+        url(fonts/Lato-Italic.ttf),
+        url(fonts/Lato-Light.ttf),
+        url(fonts/Lato-LightItalic.ttf),
+        url(fonts/Lato-Regular.ttf),
+        url(fonts/Lato-Thin.ttf),
+        url(fonts/Lato-ThinItalic.ttf);
+
+}
+
+.ui-icon-agregar:after {
+    background-image: url(icons/agregar.png);
+}
+
+.ui-icon-borrar:after {
+    background-image: url(icons/borrar.png);
+}
+
+.ui-icon-casilla_llena:after {
+    background-image: url(icons/casilla_llena.png);
+}
+
+.ui-icon-casilla_vacia:after {
+    background-image: url(icons/casilla_vacia.png);
+}
+
+.ui-icon-nosotros:after {
+    background-image: url(icons/nosotros.png);
+}
+
+.ui-icon-tilde:after {
+    background-image: url(icons/tilde.png);
+}
+
+.ui-icon-borrar_item:after {
+    background-image: url(icons/borrar_item.png);
+}
+.ui-icon-casilla_llena_destacada:after {
+    background-image: url(icons/casilla_llena_destacada.png);
+}
+.ui-icon-casilla_vacia_destacada:after {
+    background-image: url(icons/casilla_vacia_destacada.png);
+}
+.ui-icon-cerrar:after {
+    background-image: url(icons/cerrar.png);
+}
+.ui-icon-destacar_item:after {
+    background-image: url(icons/destacar_item.png);
+}
+
+
+
+
+
+
+
+
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+h1{
+    font-weight: 800;
+    color: #002950;
+}
+
+p{
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 600 !important;
+    color: #262626 !important;
+}
+
+
+div .btn-suma {
+    position: absolute;
+    bottom: 5%;
+    right: 50px;
+    height: 55px !important;
+    width: 55px !important;
+    background-color: #A0E530 !important;
+    position: fixed;
+}
+
+div .btn-destacar {
+    display: none;
+    position: absolute;
+    bottom: 13%;
+    right: 57.4px;
+    height: 40px !important;
+    width: 40px !important;
+    background-color: #A0E530 !important;
+    position: fixed;
+
+}
+
+div .btn-borrar {
+    display: none;
+    position: absolute;
+    bottom: 19%;
+    right: 57.4px;
+    height: 40px !important;
+    width: 40px !important;
+    background-color: #A0E530 !important;
+    position: fixed;
+}
+
+
+
+
+div form{
+    margin-left: 3%;
+}
+
+
+.lista {
+    text-align: left !important;
+    padding: 0px;
+}
+
+
+div .img-juampi {
+
+    max-width: 100%;
+}
+
+div .foto1gonza {
+
+    margin-top: 5.8%;
+}
+
+div .nombres {
+
+    text-align: center;
+    margin: 2%;
+}
+
+div .carrera {
+
+    text-align: center;
+    margin: 0px;
+}
+
+div .materia {
+    margin-left: 7%;
+    margin-top: 6%;
+    margin-bottom: 0px;
+}
+
+div .materia-program {
+    margin-left: 7%;
+    margin-top: 0px;
+    margin-bottom: 4%;
+
+}
+
+
+div .align-medio{
+    text-align: center;
+}
+
+div div .no-quiero, .si-quiero{
+    margin: 2% 7% !important;
+
+}
+
+div div .si-quiero{
+    background-color: #A0E530 !important;
+    font-weight: 700 !important;
+
+}
+
+div .parrafo-basura {
+    font-weight: 800 !important;
+    text-align: center !important;
+}
+
+
+
+.seleccionado-vacio {
+
+background-color: rgba(160, 229, 48, 0.2) !important;
+
+}
+
+.seleccionado-lleno{
+ 
+    background-color: rgba(160, 229, 48, 0.5) !important;
+    
+    }
+
+.destacar-texto{
+    color: rgb(0, 214, 34) !important;
+}
+
+
+
+  input 
+    {
+        margin-top: 15px !important;
+        padding: .4em;
+        line-height: 1.4em;
+        display: block;
+        width: 95%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        outline: 0;
+        margin: 0;
+        min-height: 2.2em; 
+        border: 0;
+        background-color: #fffae6;;
+        -webkit-appearance: none;
+        -webkit-border-radius: inherit;
+        border-radius: 10px;
+        box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
+        
+    }
+
+
+    input:focus{
+        box-shadow: 0 0 6.5pt 0.9pt #A0E530;
+      }
+
+      .input-list{
+        display: flex;
+        justify-content: center;
+      }

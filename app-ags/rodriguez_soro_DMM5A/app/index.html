@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Argentina Game Show 2021</title>
+    <link rel="stylesheet" href="jqm/jquery.mobile-1.4.5.css" />
+    <link rel="stylesheet" href="jqm/ags.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="jqm/jquery-1.12.3.min.js"></script>
+    <script src="jqm/jquery.mobile-1.4.5.js"></script>
+</head>
+
+<body>
+    <div data-role="page" id="map" data-theme="a">
+        <div data-role="header" data-position="fixed" data-id="fixeado">
+            <h1 id="mapa-title">Mapa</h1>
+            <a href="#info-personal1" data-rel="popup" data-position-to="window" data-transition="flip" data-icon="nosotros" data-iconpos="notext" class="ui-btn-right">personal</a
+        >
+      </div>
+
+      <div role="main" class="ui-content">
+        <img id="mapa-ags" src="imgs/mapa.jpg" alt="mapa de la ags" />
+
+        <div id="info-personal1" data-role="popup">
+          <div data-role="header">
+            <h1>Sobre Nosotros</h1>
+            <a
+              href="#"
+              data-rel="back"
+              data-role="button"
+              data-icon="close"
+              data-iconpos="notext"
+              class="ui-btn-right"
+              >Cerrar Popup</a
+            >
+          </div>
+          <div class="ui-grid-a">
+                
+            <div id="foto1" class="ui-block-a">
+              <img id="img-juampi" src="imgs/Gonza.jpg" alt="Cara de Gonza" />
+              <h3 id="nombres">Gonzalo Nahuel Rodriguez</h3>
+              <h4 id="carrera">Diseño Multimedial</h4>
+
+              <h5 id="materia">Materia</h5>
+              <h6 id="materia-program">
+                Desarrollo de Aplicaciones Multiplataforma
+              </h6>
+              <h5 id="materia">Comisión</h5>
+              <h6 id="materia-program">A</h6>
+              <h5 id="materia">Turno</h5>
+              <h6 id="materia-program">Tarde</h6>
+              <h5 id="materia">Año</h5>
+              <h6 id="materia-program">2021</h6>
+            </div>
+
+            <div class="ui-block-b">
+              <img id="img-juampi" src="imgs/juampi.jpg" alt="Cara de Juampi" />
+              <h3 id="nombres">Juan Pablo Soro Lovece</h3>
+              <h4 id="carrera">Diseño Multimedial</h4>
+
+              <h5 id="materia">Materia</h5>
+              <h6 id="materia-program">
+                Desarrollo de Aplicaciones Multiplataforma
+              </h6>
+              <h5 id="materia">Comisión</h5>
+              <h6 id="materia-program">A</h6>
+              <h5 id="materia">Turno</h5>
+              <h6 id="materia-program">Tarde</h6>
+              <h5 id="materia">Año</h5>
+              <h6 id="materia-program">2021</h6>
+            </div>
+          </div>
+          <div data-role="footer">
+            <h2>¡Gracias por ver!</h2>
+          </div>
+        </div>
+      </div>
+
+      <div data-role="footer" data-id="fixeado2" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+          <ul>
+            <li>
+              <a
+                href="#bondi"
+                data-icon="bondi"
+                data-transition="slide"
+                data-direction="reverse"
+                >Como Llegar</a
+              >
+            </li>
+            <li>
+              <a
+                href="#map"
+                data-icon="mapaags"
+                class="ui-btn-active ui-state-persist"
+                >Mapa AGS</a
+              >
+            </li>
+            <li>
+              <a
+                href="#cronograma"
+                data-icon="cronograma"
+                data-transition="slide"
+                >Cronograma</a
+              >
+            </li>
+            <li>
+              <a href="#info" data-icon="informacion" data-transition="slide"
+                >Información</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div data-role="page" id="bondi" data-theme="a">
+      <div data-role="header" data-position="fixed" data-id="fixeado">
+        <h1 id="como-llego">Como Llegar</h1>
+        <a
+          href="#info-personal2"
+          data-rel="popup"
+          data-position-to="window"
+          data-transition="flip"
+          data-icon="nosotros"
+          data-iconpos="notext"
+          class="ui-btn-right"
+          >personal</a
+        >
+      </div>
+      <div role="main" class="ui-content">
+        <img
+          id="img-mapa-bondis"
+          src="imgs/mapa-bondis.jpg"
+          alt="mapa para llegar a la ags"
+        />
+
+        <div data-role="collapsible-set">
+          <div
+            data-role="collapsible"
+            data-collapsed="false"
+            data-collapsed-icon="abajo"
+            data-expanded-icon="arriba"
+          >
+            <h3>Linea 45</h3>
+            <p id="desde-hasta">
+              Desde <span id="parada"> Remedios de Escalada </span>
+            </p>
+            <p id="desde-hasta">
+              Hasta <span id="parada"> Ciudad Universitaria </span>
+            </p>
+            <p id="ramal">Solo ramal "Ciudad Universitaria"</p>
+          </div>
+
+          <div
+            data-role="collapsible"
+            data-collapsed-icon="abajo"
+            data-expanded-icon="arriba"
+          >
+            <h3>Linea 160</h3>
+            <p id="desde-hasta">Desde <span id="parada"> Claypole </span></p>
+            <p id="desde-hasta">
+              Hasta <span id="parada"> Ciudad Universitaria </span>
+            </p>
+            <p id="ramal">Solo ramal "Ciudad Universitaria"</p>
+          </div>
+
+          <div
+            data-role="collapsible"
+            data-collapsed-icon="abajo"
+            data-expanded-icon="arriba"
+          >
+            <h3>Linea 33</h3>
+            <p id="desde-hasta">Desde <span id="parada"> Quilmes </span></p>
+            <p id="desde-hasta">
+              Hasta <span id="parada"> Ciudad Universitaria </span>
+            </p>
+            <p id="ramal">Solo ramal "Ciudad Universitaria"</p>
+          </div>
+
+          <div
+            data-role="collapsible"
+            data-collapsed-icon="abajo"
+            data-expanded-icon="arriba"
+          >
+            <h3>Linea 37</h3>
+            <p id="desde-hasta">Desde <span id="parada"> Lanús </span></p>
+            <p id="desde-hasta">
+              Hasta <span id="parada"> Ciudad Universitaria </span>
+            </p>
+            <p id="ramal">Solo ramal "4", por Costanera.</p>
+          </div>
+        </div>
+
+        <div id="info-personal2" data-role="popup">
+          <div data-role="header">
+            <h1>Sobre Nosotros</h1>
+            <a
+              href="#"
+              data-rel="back"
+              data-role="button"
+              data-icon="close"
+              data-iconpos="notext"
+              class="ui-btn-right"
+              >Cerrar Popup</a
+            >
+          </div>
+          <div class="ui-grid-a">
+                
+            <div id="foto1" class="ui-block-a">
+              <img id="img-juampi" src="imgs/Gonza.jpg" alt="Cara de Gonza" />
+              <h3 id="nombres">Gonzalo Nahuel Rodriguez</h3>
+              <h4 id="carrera">Diseño Multimedial</h4>
+
+              <h5 id="materia">Materia</h5>
+              <h6 id="materia-program">
+                Desarrollo de Aplicaciones Multiplataforma
+              </h6>
+              <h5 id="materia">Comisión</h5>
+              <h6 id="materia-program">A</h6>
+              <h5 id="materia">Turno</h5>
+              <h6 id="materia-program">Tarde</h6>
+              <h5 id="materia">Año</h5>
+              <h6 id="materia-program">2021</h6>
+            </div>
+
+            <div class="ui-block-b">
+              <img id="img-juampi" src="imgs/juampi.jpg" alt="Cara de Juampi" />
+              <h3 id="nombres">Juan Pablo Soro Lovece</h3>
+              <h4 id="carrera">Diseño Multimedial</h4>
+
+              <h5 id="materia">Materia</h5>
+              <h6 id="materia-program">
+                Desarrollo de Aplicaciones Multiplataforma
+              </h6>
+              <h5 id="materia">Comisión</h5>
+              <h6 id="materia-program">A</h6>
+              <h5 id="materia">Turno</h5>
+              <h6 id="materia-program">Tarde</h6>
+              <h5 id="materia">Año</h5>
+              <h6 id="materia-program">2021</h6>
+            </div>
+          </div>
+          <div data-role="footer">
+            <h2>¡Gracias por ver!</h2>
+          </div>
+        </div>
+      </div>
+      <div data-role="footer" data-id="fixeado" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+          <ul>
+            <li>
+              <a
+                href="#bondi"
+                data-icon="bondi"
+                class="ui-btn-active ui-state-persist"
+                >Como Llegar</a
+              >
+            </li>
+            <li>
+              <a href="#map" data-icon="mapaags" data-transition="slide"
+                >Mapa AGS</a
+              >
+            </li>
+            <li>
+              <a
+                href="#cronograma"
+                data-icon="cronograma"
+                data-transition="slide"
+                >Cronograma</a
+              >
+            </li>
+            <li>
+              <a href="#info" data-icon="informacion" data-transition="slide"
+                >Información</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div data-role="page" id="cronograma" data-theme="a">
+      <div data-role="header" data-position="fixed" data-id="fixeado">
+        <h1 id="cronograma-title">Cronograma</h1>
+        <a
+          href="#info-personal3"
+          data-rel="popup"
+          data-position-to="window"
+          data-transition="flip"
+          data-icon="nosotros"
+          data-iconpos="notext"
+          class="ui-btn-right"
+          >personal</a
+        >
+      </div>
+      <div role="main" class="ui-content">
+        <div id="viernes-sabado-domingo" data-role="tabs">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#viernes" class="ui-btn-active">Viernes</a></li>
+            <li><a href="#sabado">Sábado</a></li>
+            <li><a href="#domingo">Domingo</a></li>
+            </ul>
+        </div>
+
+        <div id="viernes">
+            <ul data-role="listview">
+                <li data-role="list-divider">15:00 - 17 de Agosto</li>
+
+                <li data-icon="close">
+                    <a id="item-lista" href="#viernes1" data-rel="popup" data-position-to="window" data-transition="slideup">
+                        <img id="img-list" src="imgs/fifa.jpg" alt="fifa" />
+                        <h2>Torneo FIFA 19</h2>
+                        <p id="parrafo-desc">
+                            Comienza en una nueva edición del torneo de FIFA 19 con premios de primera.
+                        </p>
+                        <p class="ui-li-aside">Por: Coscu</p>
+                    </a>
+
+                    <div id="viernes1" data-role="popup">
+                        <div data-role="header">
+                            <h1>Torneo FIFA 19</h1>
+                            <a href="#" data-rel="back" data-role="button" data-icon="close" data-iconpos="notext" class="ui-btn-right">Cerrar Popup</a
+                    >
+                  </div>
+                  <div role="main" class="ui-content">
+                    <img
+                      id="imagen-popup"
+                      src="imgs/1v1fifa-banner.jpg"
+                      alt="fifa"
+                    />
+
+                    <p id="desc-evento">
+                      En esta edición de FIFA 19 te presentamos un torneo de 32
+                      equipos de la maxima categoria de Argentina. Todos
+                      participando por un solo premio. El mejor ganará.
+                    </p>
+
+                    <h4>Disertante: Coscu</h4>
+
+                    <div class="ui-grid-a">
+                      <div class="ui-block-b ui-grid-a">
+                        <div class="ui-block-b">
+                          <img
+                            id="imagen-popup-perfil"
+                            src="imgs/coscu.jpg"
+                            alt="coscu"
+                          />
+                        </div>
+                        <div class="ui-block-b">
+                          <ul id="redes-sociales" data-role="listview">
+                            <li>
+                              <img
+                                src="imgs/ig.png"
+                                alt="instagram"
+                                class="ui-li-icon ui-corner-none"
+                              />Coscu
+                            </li>
+                            <li>
+                              <img
+                                src="imgs/twt.png"
+                                alt="twitter"
+                                class="ui-li-icon ui-corner-none"
+                              />Coscu
+                            </li>
+                            <li>
+                              <img
+                                src="imgs/tw.png"
+                                alt="twitch"
+                                class="ui-li-icon ui-corner-none"
+                              />Coscu
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="ui-grid-a ui-block-b">
+                        <div>
+                          <p id="parrafo-disertante">
+                            Coscu, el Old School de los streamers. Con más de 10
+                            años en Twitch.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-role="footer">
+                    <h2>Esports - Cosplay - Videojuegos</h2>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <ul data-role="listview">
+              <li data-role="list-divider">16:00 - 17 de Agosto</li>
+
+              <li data-icon="close">
+                <a
+                  id="item-lista"
+                  href="#viernes2"
+                  data-rel="popup"
+                  data-position-to="window"
+                  data-transition="slideup"
+                >
+                  <img id="img-list" src="imgs/hyperx.jpg" alt="hyperx" />
+                  <h2>Stand HyperX</h2>
+                  <p id="parrafo-desc">
+                    HyperX presentará un producto para revolucionar el mercado
+                    de los perifericos y hardware.
+                  </p>
+                  <p class="ui-li-aside">Por: Pimpeano</p>
+                </a>
+
+                            <div id="viernes2" data-role="popup">
+                                <div data-role="header">
+                                    <h1>Stand HyperX</h1>
+                                    <a href="#" data-rel="back" data-role="button" data-icon="close" data-iconpos="notext" class="ui-btn-right">Cerrar Popup</a
+                    >
+                  </div>
+                  <div role="main" class="ui-content">
+                    <img
+                      id="imagen-popup"
+                      src="imgs/hyperx-banner.jpg"
+                      alt="hyperx"
+                    />
+
+                    <p id="desc-evento">
+                      HyperX, una de las marcas mas importantes del país
+                      presenta sus nuevos productos de maxima calidad. Veni a su
+                      stand a conocerlos!
+                    </p>
+
+                    <h4>Disertante: Pimpeano</h4>
+
+                    <div class="ui-grid-a">
+                      <div class="ui-block-b ui-grid-a">
+                        <div class="ui-block-b">
+                          <img
+                            id="imagen-popup-perfil"
+                            src="imgs/pimpe.jpg"
+                            alt="Pimpe"
+                          />
+                        </div>
+                        <div class="ui-block-b">
+                          <ul id="redes-sociales" data-role="listview">
+                            <li>
+                              <img
+                                src="imgs/ig.png"
+                                alt="instagram"
+                                class="ui-li-icon ui-corner-none"
+                              />Pimpeano
+                            </li>
+
+                            <li>
+                              <img
+                                src="imgs/twt.png"
+                                alt="twitter"
+                                class="ui-li-icon ui-corner-none"
+                              />Pimpeano
+                            </li>
+
+                            <li>
+                              <img
+                                src="imgs/tw.png"
+                                alt="twitch"
+                                class="ui-li-icon ui-corner-none"
+                              />Pimpeano
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="ui-grid-a ui-block-b">
+                        <div>
+                          <p id="parrafo-disertante">
+                            Pimpeano es un streamer de la nueva generación de
+                            Twitch.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-role="footer">
+                    <h2>Esports - Cosplay - Videojuegos</h2>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <ul data-role="listview">
+              <li data-role="list-divider">16:50 - 17 de Agosto</li>
+
+              <li data-icon="close">
+                <a
+                  id="item-lista"
+                  href="#viernes3"
+                  data-rel="popup"
+                  data-position-to="window"
+                  data-transition="slideup"
+                >
+                  <img id="img-list" src="imgs/9z.jpg" alt="9z vs ca" />
+                  <h2>9z vs CA</h2>
+                  <p id="parrafo-desc">
+                    Para arrancar más fuerte que nunca, el clásico de Counter
+                    Strike Global Offensive.
+                  </p>
+                  <p class="ui-li-aside">Por: El Demente</p>
+                </a>
+
+                                    <p id="dia">V I E R N E S</p>
+
+                                    <div id="viernes3" data-role="popup">
+                                        <div data-role="header">
+                                            <h1>9z vs CA</h1>
+                                            <a href="#" data-rel="back" data-role="button" data-icon="close" data-iconpos="notext" class="ui-btn-right">Cerrar Popup</a
+                    >
+                  </div>
+                  <div role="main" class="ui-content">
+                    <img id="imagen-popup" src="imgs/9z-banner.jpg" alt="9z" />
+
+                    <p id="desc-evento">
+                      El showmatch mas esperado de 2019. La Coscu Army vs 9z,
+                      Coscu vs Frankkaster. Un solo ganador, veni a disfrutar de
+                      los mejores jugadores de Argentina.
+                    </p>
+
+                    <h4>Disertante: El Demente</h4>
+
+                    <div class="ui-grid-a">
+                      <div class="ui-block-b ui-grid-a">
+                        <div class="ui-block-b">
+                          <img
+                            id="imagen-popup-perfil"
+                            src="imgs/demente.jpg"
+                            alt="demente"
+                          />
+                        </div>
+                        <div class="ui-block-b">
+                          <ul id="redes-sociales" data-role="listview">
+                            <li>
+                              <img
+                                src="imgs/ig.png"
+                                alt="instagram"
+                                class="ui-li-icon ui-corner-none"
+                              />Demente
+                            </li>
+
+                            <li>
+                              <img
+                                src="imgs/twt.png"
+                                alt="twitter"
+                                class="ui-li-icon ui-corner-none"
+                              />Demente
+                            </li>
+
+                            <li>
+                              <img
+                                src="imgs/tw.png"
+                                alt="twitch"
+                                class="ui-li-icon ui-corner-none"
+                              />Demente
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="ui-grid-a ui-block-b">
+                        <div>
+                          <p id="parrafo-disertante">
+                            El Demente es un creador de contenido
+                            multiplataforma de mas de 5 millones de seguidores.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-role="footer">
+                    <h2>Esports - Cosplay - Videojuegos</h2>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div id="sabado">
+            <ul data-role="listview">
+              <li data-role="list-divider">12:50 - 18 de Agosto</li>
+
+              <li data-icon="close">
+                <a
+                  id="item-lista"
+                  href="#viernes4"
+                  data-rel="popup"
+                  data-position-to="window"
+                  data-transition="slideup"
+                >
+                  <img
+                    id="img-list"
+                    src="imgs/just.jpg"
+                    alt="Copa just dance"
+                  />
+                  <h2>Copa Just Dance</h2>
+                  <p id="parrafo-desc">
+                    Disfrutá del mejor torneo de baile de Argentina con
+                    invitados especiales de todos los rubros.
+                  </p>
+                  <p class="ui-li-aside">Por: El Demente</p>
+                </a>
+
+                                            <div id="viernes4" data-role="popup">
+                                                <div data-role="header">
+                                                    <h1>Copa Just Dance</h1>
+                                                    <a href="#" data-rel="back" data-role="button" data-icon="close" data-iconpos="notext" class="ui-btn-right">Cerrar Popup</a
+                    >
+                  </div>
+                  <div role="main" class="ui-content">
+                    <img
+                      id="imagen-popup"
+                      src="imgs/just-banner.jpg"
+                      alt="justdance"
+                    />
+
+                    <p id="desc-evento">
+                      Vení a mover tus caderas en este nuevo certamen de Just
+                      Dance en donde el ganador se va a llevar una Playstation 4
+                      y una cámara para su casa. ¡Deja todo en la pista!
+                    </p>
+
+                    <h4>Disertante: El Demente</h4>
+
+                    <div class="ui-grid-a">
+                      <div class="ui-block-b ui-grid-a">
+                        <div class="ui-block-b">
+                          <img
+                            id="imagen-popup-perfil"
+                            src="imgs/demente.jpg"
+                            alt="demente"
+                          />
+                        </div>
+                        <div class="ui-block-b">
+                          <ul id="redes-sociales" data-role="listview">
+                            <li>
+                              <img
+                                src="imgs/ig.png"
+                                alt="instagram"
+                                class="ui-li-icon ui-corner-none"
+                              />Demente
+                            </li>
+
+                            <li>
+                              <img
+                                src="imgs/twt.png"
+                                alt="twitter"
+                                class="ui-li-icon ui-corner-none"
+                              />Demente
+                            </li>
+
+                            <li>
+                              <img
+                                src="imgs/tw.png"
+                                alt="twitch"
+                                class="ui-li-icon ui-corner-none"
+                              />Demente
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="ui-grid-a ui-block-b">
+                        <div>
+                          <p id="parrafo-disertante">
+                            El Demente es un creador de contenido
+                            multiplataforma de mas de 5 millones de seguidores.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-role="footer">
+                    <h2>Esports - Cosplay - Videojuegos</h2>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul data-role="listview">
+              <li data-role="list-divider">13:30 - 18 de Agosto</li>
+              <li data-icon="close">
+                <a
+                  id="item-lista"
+                  href="#viernes5"
+                  data-rel="popup"
+                  data-position-to="window"
+                  data-transition="slideup"
+                >
+                  <img id="img-list" src="imgs/logitech.jpg" alt="Logitech" />
+                  <h2>Batalla Logitech</h2>
+                  <p id="parrafo-desc">
+                    Con más de 500 participantes, los jugadores disputan por
+                    premios Logitech de última generación
+                  </p>
+                  <p class="ui-li-aside">Por: Pimpeano</p>
+                </a>
+                                                    <div id="viernes5" data-role="popup">
+                                                        <div data-role="header">
+                                                            <h1>Batalla Logitech</h1>
+                                                            <a href="#" data-rel="back" data-role="button" data-icon="close" data-iconpos="notext" class="ui-btn-right">Cerrar Popup</a
+                    >
+                  </div>
+                  <div role="main" class="ui-content">
+                    <img
+                      id="imagen-popup"
+                      src="imgs/logitech-banner.jpg"
+                      alt="logitech"
+                    />
+
+                    <p id="desc-evento">
+                      En el juego de moda del momento, veni a disfrutar de
+                      construcciones, disparos y skins exclusivas. El Fornite
+                      dará de qué hablar en el próximo año.
+                    </p>
+
+                    <h4>Disertante: Pimpeano</h4>
+
+                    <div class="ui-grid-a">
+                      <div class="ui-block-b ui-grid-a">
+                        <div class="ui-block-b">
+                          <img
+                            id="imagen-popup-perfil"
+                            src="imgs/pimpe.jpg"
+                            alt="pimpe"
+                          />
+                        </div>
+                        <div class="ui-block-b">
+                          <ul id="redes-sociales" data-role="listview">
+                            <li>
+                              <img
+                                src="imgs/ig.png"
+                                alt="instagram"
+                                class="ui-li-icon ui-corner-none"
+                              />Pimpeano
+                            </li>
+
+                            <li>
+                              <img
+                                src="imgs/twt.png"
+                                alt="twitter"
+                                class="ui-li-icon ui-corner-none"
+                              />Pimpeano
+                            </li>
+
+                            <li>
+                              <img
+                                src="imgs/tw.png"
+                                alt="twitch"
+                                class="ui-li-icon ui-corner-none"
+                              />Pimpeano
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="ui-grid-a ui-block-b">
+                        <div>
+                          <p id="parrafo-disertante">
+                            Pimpeano es un streamer de la nueva generación de
+                            Twitch.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-role="footer">
+                    <h2>Esports - Cosplay - Videojuegos</h2>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul data-role="listview">
+              <li data-role="list-divider">14:00 - 18 de Agosto</li>
+              <li data-icon="close">
+                <a
+                  id="item-lista"
+                  href="#viernes6"
+                  data-rel="popup"
+                  data-position-to="window"
+                  data-transition="slideup"
+                >
+                  <img id="img-list" src="imgs/fifita.jpg" alt="fifita" />
+                  <h2>IESA Clubes Pro</h2>
+                  <p id="parrafo-desc">
+                    En la modalidad de 11vs11 en FIFA19 se enfrentarán los
+                    mejores equipos de la temporada.
+                  </p>
+                  <p class="ui-li-aside">Por: Coscu</p>
+                </a>
+                                                            <p id="dia">S Á B A D O</p>
+                                                            <div id="viernes6" data-role="popup">
+                                                                <div data-role="header">
+                                                                    <h1>IESA Clubes Pro</h1>
+                                                                    <a href="#" data-rel="back" data-role="button" data-icon="close" data-iconpos="notext" class="ui-btn-right">Cerrar Popup</a
+                    >
+                  </div>
+                  <div role="main" class="ui-content">
+                    <img
+                      id="imagen-popup"
+                      src="imgs/clubespro-banner.jpg"
+                      alt="fifita"
+                    />
+
+                    <p id="desc-evento">
+                      11vs11 compitiendo entre sí? Me parece una buena opción
+                      para ver este Domingo. Conocé lo que es Clubes Pro y la
+                      manera en que se viven estos partidos.
+                    </p>
+
+                    <h4>Disertante: Coscu</h4>
+
+                    <div class="ui-grid-a">
+                      <div class="ui-block-b ui-grid-a">
+                        <div class="ui-block-b">
+                          <img
+                            id="imagen-popup-perfil"
+                            src="imgs/coscu.jpg"
+                            alt="coscu"
+                          />
+                        </div>
+                        <div class="ui-block-b">
+                          <ul id="redes-sociales" data-role="listview">
+                            <li>
+                              <img
+                                src="imgs/ig.png"
+                                alt="instagram"
+                                class="ui-li-icon ui-corner-none"
+                              />Coscu
+                            </li>
+
+                            <li>
+                              <img
+                                src="imgs/twt.png"
+                                alt="twitter"
+                                class="ui-li-icon ui-corner-none"
+                              />Coscu
+                            </li>
+
+                            <li>
+                              <img
+                                src="imgs/tw.png"
+                                alt="twitch"
+                                class="ui-li-icon ui-corner-none"
+                              />Coscu
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="ui-grid-a ui-block-b">
+                        <div>
+                          <p id="parrafo-disertante">
+                            Coscu, el Old School de los streamers. Con más de 10
+                            años en Twitch.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-role="footer">
+                    <h2>Esports - Cosplay - Videojuegos</h2>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div id="domingo">
+            <ul data-role="listview">
+              <li data-role="list-divider">11:00 - 19 de Agosto</li>
+              <li data-icon="close">
+                <a
+                  id="item-lista"
+                  href="#viernes7"
+                  data-rel="popup"
+                  data-position-to="window"
+                  data-transition="slideup"
+                >
+                  <img
+                    id="img-list"
+                    src="imgs/tft.jpg"
+                    alt="League of legends"
+                  />
+                  <h2>TFT Cup</h2>
+                  <p id="parrafo-desc">
+                    Copa del mundo de League Of Legends en Argentina. ¡Vení a
+                    disfrutar con tus amigos!
+                  </p>
+                  <p class="ui-li-aside">Por: Coscu</p>
+                </a>
+                                                                    <div id="viernes7" data-role="popup">
+                                                                        <div data-role="header">
+                                                                            <h1>Completo</h1>
+                                                                            <a href="#" data-rel="back" data-role="button" data-icon="close" data-iconpos="notext" class="ui-btn-right">Cerrar Popup</a
+                    >
+                  </div>
+                  <div role="main" class="ui-content">
+                    <img
+                      id="imagen-popup"
+                      src="imgs/tft-banner.jpg"
+                      alt="lol"
+                    />
+                    <p id="desc-evento">
+                      Nuevo modo de juego de LOL? Si! Mundial en Argentina?
+                      ¡Claro que sí! Vení a conocer este nuevo modo y a los
+                      mejores jugadores que lo juegan.
+                    </p>
+                    <h4>Disertante: Coscu</h4>
+                    <div class="ui-grid-a">
+                      <div class="ui-block-b ui-grid-a">
+                        <div class="ui-block-b">
+                          <img
+                            id="imagen-popup-perfil"
+                            src="imgs/coscu.jpg"
+                            alt="coscu"
+                          />
+                        </div>
+                        <div class="ui-block-b">
+                          <ul id="redes-sociales" data-role="listview">
+                            <li>
+                              <img
+                                src="imgs/ig.png"
+                                alt="instagram"
+                                class="ui-li-icon ui-corner-none"
+                              />Coscu
+                            </li>
+
+                            <li>
+                              <img
+                                src="imgs/twt.png"
+                                alt="twitter"
+                                class="ui-li-icon ui-corner-none"
+                              />Coscu
+                            </li>
+
+                            <li>
+                              <img
+                                src="imgs/tw.png"
+                                alt="twitch"
+                                class="ui-li-icon ui-corner-none"
+                              />Coscu
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="ui-grid-a ui-block-b">
+                        <div>
+                          <p id="parrafo-disertante">
+                            Coscu, el Old School de los streamers. Con más de 10
+                            años en Twitch.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-role="footer">
+                    <h2>Esports - Cosplay - Videojuegos</h2>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul data-role="listview">
+              <li data-role="list-divider">12:15 - 19 de Agosto</li>
+              <li data-icon="close">
+                <a
+                  id="item-lista"
+                  href="#viernes8"
+                  data-rel="popup"
+                  data-position-to="window"
+                  data-transition="slideup"
+                >
+                  <img id="img-list" src="imgs/cospaly.jpg" alt="Cosplay" />
+                  <h2>Cosplay Anime</h2>
+                  <p id="parrafo-desc">
+                    En una nueva temporada de la AGS te presentamos estos
+                    Cosplayers de tus animes favoritos.
+                  </p>
+                  <p class="ui-li-aside">Por: El Demente</p>
+                </a>
+                                                                            <p id="dia">D O M I N G O</p>
+                                                                            <div id="viernes8" data-role="popup">
+                                                                                <div data-role="header">
+                                                                                    <h1>Completo</h1>
+                                                                                    <a href="#" data-rel="back" data-role="button" data-icon="close" data-iconpos="notext" class="ui-btn-right">Cerrar Popup</a
+                    >
+                  </div>
+                  <div role="main" class="ui-content">
+                    <img
+                      id="imagen-popup"
+                      src="imgs/cosplay-banner.jpg"
+                      alt="cosplay"
+                    />
+                    <p id="desc-evento">
+                      Muchos de los usuarios de anime se visten como sus
+                      personajes favoritos. Vení al stand de los cosplayers más
+                      conocidos de latino america.
+                    </p>
+                    <h4>Disertante: El Demente</h4>
+                    <div class="ui-grid-a">
+                      <div class="ui-block-b ui-grid-a">
+                        <div class="ui-block-b">
+                          <img
+                            id="imagen-popup-perfil"
+                            src="imgs/demente.jpg"
+                            alt="demente"
+                          />
+                        </div>
+                        <div class="ui-block-b">
+                          <ul id="redes-sociales" data-role="listview">
+                            <li>
+                              <img
+                                src="imgs/ig.png"
+                                alt="instagram"
+                                class="ui-li-icon ui-corner-none"
+                              />Demente
+                            </li>
+
+                            <li>
+                              <img
+                                src="imgs/twt.png"
+                                alt="twitter"
+                                class="ui-li-icon ui-corner-none"
+                              />Demente
+                            </li>
+
+                            <li>
+                              <img
+                                src="imgs/tw.png"
+                                alt="twitch"
+                                class="ui-li-icon ui-corner-none"
+                              />Demente
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="ui-grid-a ui-block-b">
+                        <div>
+                          <p id="parrafo-disertante">
+                            El Demente es un creador de contenido
+                            multiplataforma de mas de 5 millones de seguidores.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-role="footer">
+                    <h2>Esports - Cosplay - Videojuegos</h2>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="info-personal3" data-role="popup">
+          <div data-role="header">
+            <h1>Sobre Nosotros</h1>
+            <a
+              href="#"
+              data-rel="back"
+              data-role="button"
+              data-icon="close"
+              data-iconpos="notext"
+              class="ui-btn-right"
+              >Cerrar Popup</a
+            >
+          </div>
+          <div class="ui-grid-a">
+                
+            <div id="foto1" class="ui-block-a">
+              <img id="img-juampi" src="imgs/Gonza.jpg" alt="Cara de Gonza" />
+              <h3 id="nombres">Gonzalo Nahuel Rodriguez</h3>
+              <h4 id="carrera">Diseño Multimedial</h4>
+
+              <h5 id="materia">Materia</h5>
+              <h6 id="materia-program">
+                Desarrollo de Aplicaciones Multiplataforma
+              </h6>
+              <h5 id="materia">Comisión</h5>
+              <h6 id="materia-program">A</h6>
+              <h5 id="materia">Turno</h5>
+              <h6 id="materia-program">Tarde</h6>
+              <h5 id="materia">Año</h5>
+              <h6 id="materia-program">2021</h6>
+            </div>
+
+            <div class="ui-block-b">
+              <img id="img-juampi" src="imgs/juampi.jpg" alt="Cara de Juampi" />
+              <h3 id="nombres">Juan Pablo Soro Lovece</h3>
+              <h4 id="carrera">Diseño Multimedial</h4>
+
+              <h5 id="materia">Materia</h5>
+              <h6 id="materia-program">
+                Desarrollo de Aplicaciones Multiplataforma
+              </h6>
+              <h5 id="materia">Comisión</h5>
+              <h6 id="materia-program">A</h6>
+              <h5 id="materia">Turno</h5>
+              <h6 id="materia-program">Tarde</h6>
+              <h5 id="materia">Año</h5>
+              <h6 id="materia-program">2021</h6>
+            </div>
+          </div>
+          <div data-role="footer">
+            <h2>¡Gracias por Ver!</h2>
+          </div>
+        </div>
+      </div>
+      <div data-role="footer" data-id="fixeado" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+          <ul>
+            <li>
+              <a
+                href="#bondi"
+                data-icon="bondi"
+                data-transition="slide"
+                data-direction="reverse"
+                >Como Llegar</a
+              >
+            </li>
+            <li>
+              <a
+                href="#map"
+                data-icon="mapaags"
+                data-transition="slide"
+                data-direction="reverse"
+                >Mapa AGS</a
+              >
+            </li>
+            <li>
+              <a
+                href="#cronograma"
+                data-icon="cronograma"
+                class="ui-btn-active ui-state-persist"
+                >Cronograma</a
+              >
+            </li>
+            <li>
+              <a href="#info" data-icon="informacion" data-transition="slide"
+                >Información</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div data-role="page" id="info" data-theme="a">
+      <div data-role="header" data-position="fixed">
+        <h1 id="info-title">Información</h1>
+        <a
+          href="#info-personal4"
+          data-rel="popup"
+          data-position-to="window"
+          data-transition="flip"
+          data-icon="nosotros"
+          data-iconpos="notext"
+          class="ui-btn-right"
+          >personal</a
+        >
+      </div>
+      <div role="main" class="ui-content">
+        <div data-role="collapsible-set">
+          <div
+            data-role="collapsible"
+            data-collapsed="false"
+            data-collapsed-icon="abajo"
+            data-expanded-icon="arriba"
+          >
+            <h3>Evento</h3>
+            <img id="img-evento" src="imgs/evento.jpg" alt="agshow" />
+            <p id="parrafo-info">
+              El evento más importante de videojuegos y deportes electrónicos a
+              nivel nacional estará presente en este Octubre del 2019.
+              Lanzamientos exclusivos, e-Sports, cosplay, shows, charlas,
+              invitados, y más.
+            </p>
+          </div>
+
+          <div
+            data-role="collapsible"
+            data-collapsed-icon="abajo"
+            data-expanded-icon="arriba"
+          >
+            <h3>De gamers para gamers</h3>
+            <img id="img-evento" src="imgs/gamers.jpg" alt="gamers" />
+            <p id="parrafo-info">
+              Argentina Game Show es la expo de videojuegos y tecnología en
+              donde te acercamos lo último y mejor de la industria internacional
+              y local a los que comparten esta pasión en todo el país.
+            </p>
+          </div>
+
+          <div
+            data-role="collapsible"
+            data-collapsed-icon="abajo"
+            data-expanded-icon="arriba"
+          >
+            <h3>Dónde estamos</h3>
+            <img id="img-evento" src="imgs/costa.jpg" alt="Costa Salguero" />
+            <p id="parrafo-info">
+              El predio Costa Salguero está ubicado en el barrio de Palermo, en
+              la intersección de la Avenida Costanera Norte, Rafael Obrigado y
+              la calle Jerónimo Salguero.
+            </p>
+          </div>
+        </div>
+
+        <h2>¡Contactános!</h2>
+
+        <ul id="redes-ags" data-role="listview">
+          <li>
+            <img
+              src="imgs/mail.png"
+              alt="Mail"
+              class="ui-li-icon ui-corner-none"
+            />info@gameshow.com.ar
+          </li>
+          <li>
+            <img
+              src="imgs/tel.png"
+              alt="Telefono"
+              class="ui-li-icon ui-corner-none"
+            />011-4704-7292
+          </li>
+          <li>
+            <img
+              src="imgs/web.png"
+              alt="website"
+              class="ui-li-icon ui-corner-none"
+            />2019.argentinagameshow.com/
+          </li>
+        </ul>
+
+        <div id="iconos-ags" data-role="controlgroup" data-type="horizontal">
+          <a
+            href="https://www.instagram.com/ArgentinaGameShow/"
+            data-role="button"
+            data-icon="instagram"
+            data-iconpos="notext"
+            >botón</a
+          >
+          <a
+            href="https://www.facebook.com/ArgentinaGameShow/"
+            data-role="button"
+            data-icon="facebook"
+            data-iconpos="notext"
+            >botón</a
+          >
+          <a
+            href="https://gaming.youtube.com/ArgentinaGameShow/"
+            data-role="button"
+            data-icon="youtube"
+            data-iconpos="notext"
+            >botón</a
+          >
+          <a
+            href="https://twitter.com/ArGameShow/"
+            data-role="button"
+            data-icon="twitter"
+            data-iconpos="notext"
+            >botón</a
+          >
+          <a
+            href="https://chat.whatsapp.com/HFxYSxGplba9CRti0rj8fC"
+            data-role="button"
+            data-icon="wpp"
+            data-iconpos="notext"
+            >botón</a
+          >
+          <a
+            href="https://discord.gg/qjbTxvY"
+            data-role="button"
+            data-icon="discord"
+            data-iconpos="notext"
+            >botón</a
+          >
+        </div>
+
+        <div id="info-personal4" data-role="popup">
+          <div data-role="header">
+            <h1>Sobre Nosotros</h1>
+            <a
+              href="#"
+              data-rel="back"
+              data-role="button"
+              data-icon="close"
+              data-iconpos="notext"
+              class="ui-btn-right"
+              >Cerrar Popup</a
+            >
+          </div>
+          <div class="ui-grid-a">
+                
+            <div id="foto1" class="ui-block-a">
+              <img id="img-juampi" src="imgs/Gonza.jpg" alt="Cara de Gonza" />
+              <h3 id="nombres">Gonzalo Nahuel Rodriguez</h3>
+              <h4 id="carrera">Diseño Multimedial</h4>
+
+              <h5 id="materia">Materia</h5>
+              <h6 id="materia-program">
+                Desarrollo de Aplicaciones Multiplataforma
+              </h6>
+              <h5 id="materia">Comisión</h5>
+              <h6 id="materia-program">A</h6>
+              <h5 id="materia">Turno</h5>
+              <h6 id="materia-program">Tarde</h6>
+              <h5 id="materia">Año</h5>
+              <h6 id="materia-program">2021</h6>
+            </div>
+
+            <div class="ui-block-b">
+              <img id="img-juampi" src="imgs/juampi.jpg" alt="Cara de Juampi" />
+              <h3 id="nombres">Juan Pablo Soro Lovece</h3>
+              <h4 id="carrera">Diseño Multimedial</h4>
+
+              <h5 id="materia">Materia</h5>
+              <h6 id="materia-program">
+                Desarrollo de Aplicaciones Multiplataforma
+              </h6>
+              <h5 id="materia">Comisión</h5>
+              <h6 id="materia-program">A</h6>
+              <h5 id="materia">Turno</h5>
+              <h6 id="materia-program">Tarde</h6>
+              <h5 id="materia">Año</h5>
+              <h6 id="materia-program">2021</h6>
+            </div>
+          </div>
+          <div data-role="footer">
+            <h2>¡Gracias por Ver!</h2>
+          </div>
+        </div>
+      </div>
+      <div data-role="footer" data-id="fixeado" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+          <ul>
+            <li>
+              <a
+                href="#bondi"
+                data-icon="bondi"
+                data-transition="slide"
+                data-direction="reverse"
+                >Como Llegar</a
+              >
+            </li>
+            <li>
+              <a
+                href="#map"
+                data-icon="mapaags"
+                data-transition="slide"
+                data-direction="reverse"
+                >Mapa AGS</a
+              >
+            </li>
+            <li>
+              <a
+                href="#cronograma"
+                data-icon="cronograma"
+                data-transition="slide"
+                data-direction="reverse"
+                >Cronograma</a
+              >
+            </li>
+            <li>
+              <a
+                href="#info"
+                data-icon="informacion"
+                class="ui-btn-active ui-state-persist"
+                >Información</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

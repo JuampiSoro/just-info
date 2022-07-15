@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just List</title>
+    <link rel="stylesheet" href="jq/jquery.mobile-1.4.5.css">
+    <link rel="stylesheet" href="jq/tema.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="jq/jquery-1.12.3.min.js"> </script>
+    <script src="jq/jquery.mobile-1.4.5.js"> </script>
+
+
+</head>
+
+<body id="body">
+    <div data-role="page" id="home">
+        <div id="action-bar" data-role="header" data-position="fixed">
+            <a href="#borrar-todo" data-icon="borrar" data-iconpos="notext" class="ui-btn-left" data-rel="popup"
+                data-position-to="window" data-transition="flip">borrar todo</a>
+            <h1>Just List</h1>
+            <a href="#info-personal1" data-rel="popup" data-position-to="window" data-transition="flip"
+                data-icon="nosotros" data-iconpos="notext" class="ui-btn-right">personal</a>
+
+        </div>
+
+        <div id="info-personal1" data-role="popup">
+            <div data-role="header">
+                <h1>Sobre Nosotros</h1>
+                <a href="#" data-rel="back" data-role="button" data-icon="cerrar" data-iconpos="notext"
+                    class="ui-btn-right">Cerrar Popup</a>
+            </div>
+            <div class="ui-grid-a">
+                    <div class="foto1gonza ui-block-a">
+                    <img class="img-juampi" src="imgs/Gonza.jpg" alt="Cara de Gonza">
+                    <h3 class="nombres">Gonzalo Nahuel Rodriguez</h3>
+                    <h4 class="carrera">Diseño Multimedial</h4>
+
+                    <h5 class="materia">Materia</h5>
+                    <h6 class="materia-program">Desarrollo de Aplicaciones Multiplataforma</h6>
+                    <h5 class="materia">Comisión</h5>
+                    <h6 class="materia-program">A</h6>
+                    <h5 class="materia">Turno</h5>
+                    <h6 class="materia-program">Tarde</h6>
+                    <h5 class="materia">Año</h5>
+                    <h6 class="materia-program">2021</h6>
+                </div>
+
+                <div class="ui-block-b foto1">
+                    <img class="img-juampi" src="imgs/juampi.jpg" alt="Cara de Juampi">
+                    <h3 class="nombres">Juan Pablo Soro Lovece</h3>
+                    <h4 class="carrera">Diseño Multimedial</h4>
+
+                    <h5 class="materia">Materia</h5>
+                    <h6 class="materia-program">Desarrollo de Aplicaciones Multiplataforma</h6>
+                    <h5 class="materia">Comisión</h5>
+                    <h6 class="materia-program">A</h6>
+                    <h5 class="materia">Turno</h5>
+                    <h6 class="materia-program">Tarde</h6>
+                    <h5 class="materia">Año</h5>
+                    <h6 class="materia-program">2021</h6>
+                </div>
+            </div>
+            <div data-role="footer">
+                <h2>¡Gracias por usar Just List!</h2>
+            </div>
+        </div>
+
+        <div id="borrar-todo" data-role="popup">
+            <div data-role="header">
+                <h1>¡Cuidado!</h1>
+                <a href="#" data-rel="back" data-role="button" data-icon="cerrar" data-iconpos="notext"
+                    class="ui-btn-right">Cerrar Popup</a>
+            </div>
+            <p class="parrafo-basura">¿Estás seguro que querés eliminar TODOS los items?</p>
+
+            <div class="align-medio">
+                <a class="no-quiero ui-btn ui-btn-inline" data-rel="back">Mejor no</a>
+                <a id="eliminar-todos" class="si-quiero ui-btn ui-btn-inline" data-rel="back">Si, quiero</a>
+            </div>
+
+        </div>
+
+
+        <div id="borrar-items" data-role="popup">
+            <div data-role="header">
+                <h1>¡Atención!</h1>
+                <a href="#" data-rel="back" data-role="button" data-icon="cerrar" data-iconpos="notext"
+                    class="ui-btn-right">Cerrar Popup</a>
+            </div>
+            <p class="parrafo-basura">¿Estás seguro que querés eliminar los items seleccionados?</p>
+
+            <div class="align-medio">
+                <a class="no-quiero ui-btn ui-btn-inline" data-rel="back">Mejor no</a>
+                <a id="boton-borrar" class="si-quiero ui-btn ui-btn-inline" data-rel="back">Si, quiero</a>
+            </div>
+
+        </div>
+
+ 
+
+        <!-- Contenido de items -->
+
+        <div id="contenido" data-role="main" class="ui-content lista">
+              <div data-role="controlgroup" id="justLista"></div>
+        </div>
+
+
+
+        <!-- Botones -->
+
+        <div id="botones-adicionales" data-position="fixed">
+            <a id="boton-destacar" href="#"
+                class="ui-btn ui-icon-destacar_item ui-btn-icon-notext ui-corner-all btn-destacar">No text</a>
+            <a id="boton-pregunta-borrar" data-rel="popup" data-position-to="window" data-transition="flip" href="#borrar-items"
+                class="ui-btn ui-icon-borrar_item ui-btn-icon-notext ui-corner-all btn-borrar">No text</a>
+
+                
+
+        </div>
+
+        <div id="botones" data-position="fixed">
+            <a id="boton-agregar" href="#" class="ui-btn ui-icon-agregar ui-btn-icon-notext ui-corner-all btn-suma">No
+                text</a>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <script src="scripting.js"></script>
+</body>
+
+</html>

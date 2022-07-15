@@ -1,0 +1,9 @@
+Carrera: Diseño Multimedial
+Materia: Desarrollo de Aplicaciones Multiplataforma
+Año: 2021
+Cuatrimestre: 5to
+Comisión: A
+Turno: Tarde
+Integrantes: Gonzalo Nahuel Rodríguez y Juan Pablo Soro Lovece
+Docente: Omar Toyos
+Carácter de Entrega: 1er parcial

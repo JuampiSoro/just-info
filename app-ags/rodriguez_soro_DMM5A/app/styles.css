@@ -1,0 +1,273 @@
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url(fonts/Lato-Black.ttf),
+        url(fonts/Lato-BlackItalic.ttf,),
+        url(fonts/Lato-Bold.ttf),
+        url(fonts/Lato-BoldItalic.ttf),
+        url(fonts/Lato-Italic.ttf),
+        url(fonts/Lato-Light.ttf),
+        url(fonts/Lato-LightItalic.ttf),
+        url(fonts/Lato-Regular.ttf),
+        url(fonts/Lato-Thin.ttf),
+        url(fonts/Lato-ThinItalic.ttf);
+
+}
+
+.ui-icon-agslogo:after {
+    background-image: url(icons/agslogo.png);
+}
+
+.ui-icon-bondi:after {
+    background-image: url(icons/bondi.png);
+}
+
+.ui-icon-close:after {
+    background-image: url(icons/close.png);
+}
+
+.ui-icon-cronograma:after {
+    background-image: url(icons/cronograma.png);
+}
+
+.ui-icon-discord:after {
+    background-image: url(icons/discord.png);
+}
+
+.ui-icon-facebook:after {
+    background-image: url(icons/facebook.png);
+}
+
+.ui-icon-informacion:after {
+    background-image: url(icons/info.png);
+}
+
+.ui-icon-instagram:after {
+    background-image: url(icons/instagram.png);
+}
+
+.ui-icon-mapaags:after {
+    background-image: url(icons/mapaags.png);
+}
+
+.ui-icon-nosotros:after {
+    background-image: url(icons/nosotros.png);
+}
+
+.ui-icon-twitter:after {
+    background-image: url(icons/twitter.png);
+}
+
+.ui-icon-wpp:after {
+    background-image: url(icons/whatsapp.png);
+}
+
+.ui-icon-youtube:after {
+    background-image: url(icons/youtube.png);
+}
+
+.ui-icon-abajo:after {
+    background-image: url(icons/down.png)
+}
+
+.ui-icon-arriba:after {
+    background-image: url(icons/up.png);
+}
+
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+
+#mapa-ags {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+div ul li #item-lista {
+    padding-top: 0%;
+    padding-bottom: 3%;
+    margin-bottom: 5%;
+
+
+}
+
+
+div ul li a #parrafo-desc {
+    padding-left: 2%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    max-width: 87%;
+}
+
+div ul li a #img-list {
+    max-width: auto;
+    max-height: auto;
+
+}
+
+div ul li a h2 {
+    padding-left: 2%;
+}
+
+div #imagen-popup {
+
+    max-width: 100%;
+}
+
+div #imagen-popup-perfil {
+
+    max-width: 100%;
+}
+
+div #redes-sociales {
+    padding-left: 15%;
+    font-size: 11px;
+}
+
+div #parrafo-disertante {
+    font-size: 12px;
+    padding-bottom: 5%;
+    padding-left: 15%;
+}
+
+div #desc-evento {
+    margin-bottom: 5%;
+}
+
+div #img-mapa-bondis {
+
+    max-width: 100%;
+
+
+}
+
+div #desde-hasta {
+
+    font-weight: lighter;
+
+}
+
+div p #parada {
+    font-style: normal;
+    font-weight: bold;
+
+}
+
+div #ramal {
+
+    font-style: oblique;
+
+}
+
+div #img-evento {
+    float: left;
+    margin-right: 4%;
+    margin-bottom: 5%;
+
+}
+
+div #parrafo-info {
+    margin-top: 0px;
+    font-size: 13px;
+    margin-bottom: 12%;
+}
+
+div #plegable-info {
+
+    padding: 0px;
+}
+
+div #redes-ags {
+
+    margin-bottom: 0.5%;
+
+}
+
+div #iconos-ags {
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 0px;
+}
+
+div #img-juampi {
+
+    max-width: 100%;
+}
+
+div #foto1 {
+
+    margin-top: 5.8%;
+}
+
+div #nombres {
+
+    text-align: center;
+    margin: 2%;
+}
+
+div #carrera {
+
+    text-align: center;
+    margin: 0px;
+}
+
+div #materia {
+    margin-left: 7%;
+    margin-top: 6%;
+    margin-bottom: 0px;
+}
+
+div #materia-program {
+    margin-left: 7%;
+    margin-top: 0px;
+    margin-bottom: 4%;
+
+}
+
+
+div ul li #dia {
+
+    text-align: center;
+    font-size: 35px;
+    font-weight: normal;
+    font-style: oblique;
+    opacity: 50%;
+
+}
+
+div #como-llego {
+    font-weight: bolder;
+    text-align: left;
+    margin: 0px;
+    margin-left: 9%;
+
+}
+
+div #mapa-title {
+    font-weight: bolder;
+    text-align: left;
+    margin: 0px;
+    margin-left: 9%;
+
+}
+
+div #cronograma-title {
+    font-weight: bolder;
+    text-align: left;
+    margin: 0px;
+    margin-left: 9%;
+
+}
+
+div #info-title {
+    font-weight: bolder;
+    text-align: left;
+    margin: 0px;
+    margin-left: 9%;
+
+}
+
